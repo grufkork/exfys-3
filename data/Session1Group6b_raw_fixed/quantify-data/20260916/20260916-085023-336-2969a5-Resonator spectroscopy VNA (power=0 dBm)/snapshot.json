@@ -1,0 +1,2905 @@
+{
+    "instruments": {
+        "vna": {
+            "submodules": {
+                "port1": {
+                    "submodules": {},
+                    "parameters": {
+                        "source_power": {
+                            "value": null,
+                            "ts": null,
+                            "name": "source_power",
+                            "unit": "dBm",
+                            "label": "power",
+                            "validators": [
+                                "<Numbers -60<=v<=10>"
+                            ]
+                        }
+                    },
+                    "label": "port1",
+                    "name": "vna_port1"
+                },
+                "port2": {
+                    "submodules": {},
+                    "parameters": {
+                        "source_power": {
+                            "value": null,
+                            "ts": null,
+                            "name": "source_power",
+                            "unit": "dBm",
+                            "label": "power",
+                            "validators": [
+                                "<Numbers -60<=v<=10>"
+                            ]
+                        }
+                    },
+                    "label": "port2",
+                    "name": "vna_port2"
+                },
+                "ports": {
+                    "channels": {
+                        "vna_port1": {
+                            "submodules": {},
+                            "parameters": {
+                                "source_power": {
+                                    "value": null,
+                                    "ts": null,
+                                    "name": "source_power",
+                                    "unit": "dBm",
+                                    "label": "power",
+                                    "validators": [
+                                        "<Numbers -60<=v<=10>"
+                                    ]
+                                }
+                            },
+                            "label": "port1",
+                            "name": "vna_port1"
+                        },
+                        "vna_port2": {
+                            "submodules": {},
+                            "parameters": {
+                                "source_power": {
+                                    "value": null,
+                                    "ts": null,
+                                    "name": "source_power",
+                                    "unit": "dBm",
+                                    "label": "power",
+                                    "validators": [
+                                        "<Numbers -60<=v<=10>"
+                                    ]
+                                }
+                            },
+                            "label": "port2",
+                            "name": "vna_port2"
+                        }
+                    },
+                    "snapshotable": true
+                },
+                "traces": {
+                    "channels": {
+                        "vna_tr1": {
+                            "submodules": {},
+                            "parameters": {
+                                "trace": {
+                                    "value": "S21",
+                                    "ts": "2026-09-16 08:50:22",
+                                    "name": "trace",
+                                    "unit": "",
+                                    "label": "Trace",
+                                    "validators": []
+                                },
+                                "format": {
+                                    "value": null,
+                                    "ts": null,
+                                    "name": "format",
+                                    "unit": "",
+                                    "label": "Format",
+                                    "validators": [
+                                        "<Enum: {'REAL', 'MLOG', 'MLIN', 'UPH', 'IMAG', 'PHAS', 'POLAR'}>"
+                                    ]
+                                },
+                                "magnitude": {
+                                    "ts": null,
+                                    "name": "magnitude",
+                                    "unit": "dB",
+                                    "label": "Magnitude",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "linear_magnitude": {
+                                    "ts": null,
+                                    "name": "linear_magnitude",
+                                    "unit": "ratio",
+                                    "label": "Magnitude",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "phase": {
+                                    "ts": null,
+                                    "name": "phase",
+                                    "unit": "deg",
+                                    "label": "Phase",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "unwrapped_phase": {
+                                    "ts": null,
+                                    "name": "unwrapped_phase",
+                                    "unit": "deg",
+                                    "label": "Phase",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "group_delay": {
+                                    "ts": null,
+                                    "name": "group_delay",
+                                    "unit": "s",
+                                    "label": "Group Delay",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "real": {
+                                    "ts": null,
+                                    "name": "real",
+                                    "unit": "LinMag",
+                                    "label": "Real",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "imaginary": {
+                                    "ts": null,
+                                    "name": "imaginary",
+                                    "unit": "LinMag",
+                                    "label": "Imaginary",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                },
+                                "polar": {
+                                    "ts": null,
+                                    "name": "polar",
+                                    "unit": "ratio",
+                                    "label": "Polar",
+                                    "validators": [
+                                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                                    ]
+                                }
+                            },
+                            "label": "tr1",
+                            "name": "vna_tr1"
+                        }
+                    },
+                    "snapshotable": true
+                }
+            },
+            "parameters": {
+                "IDN": {
+                    "value": {
+                        "vendor": "Keysight Technologies",
+                        "model": "E5080A",
+                        "serial": "MY55402100",
+                        "firmware": "A.12.60.03"
+                    },
+                    "ts": "2026-09-16 08:45:42",
+                    "name": "IDN",
+                    "unit": "",
+                    "label": "IDN",
+                    "validators": [
+                        "<Anything>"
+                    ]
+                },
+                "timeout": {
+                    "value": 5.0,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "timeout",
+                    "unit": "s",
+                    "label": "timeout",
+                    "validators": [
+                        "<MultiType: Numbers v>=0, Enum: {None}>"
+                    ]
+                },
+                "output": {
+                    "value": true,
+                    "ts": "2026-09-16 08:50:23",
+                    "name": "output",
+                    "unit": "",
+                    "label": "RF Output",
+                    "validators": [
+                        "<Enum: {'OFF', True, '0', False, 'off', 'on', 'Off', 'ON', 'On', '1'}>"
+                    ]
+                },
+                "power": {
+                    "value": 0,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "power",
+                    "unit": "dBm",
+                    "label": "Power",
+                    "validators": [
+                        "<Numbers -60<=v<=10>"
+                    ]
+                },
+                "if_bandwidth": {
+                    "value": 1000.0,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "if_bandwidth",
+                    "unit": "Hz",
+                    "label": "IF Bandwidth",
+                    "validators": [
+                        "<Numbers 1<=v<=15000000.0>"
+                    ]
+                },
+                "averages_enabled": {
+                    "value": false,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "averages_enabled",
+                    "unit": "",
+                    "label": "Averages Enabled",
+                    "validators": [
+                        "<Enum: {False, True}>"
+                    ]
+                },
+                "averages": {
+                    "value": null,
+                    "ts": null,
+                    "name": "averages",
+                    "unit": "",
+                    "label": "Averages",
+                    "validators": [
+                        "<Numbers 1<=v<=65536>"
+                    ]
+                },
+                "start": {
+                    "value": 9000,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "start",
+                    "unit": "Hz",
+                    "label": "Start Frequency",
+                    "validators": [
+                        "<Numbers 9000.0<=v<=9000000000.0>"
+                    ]
+                },
+                "stop": {
+                    "value": 9000000000.0,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "stop",
+                    "unit": "Hz",
+                    "label": "Stop Frequency",
+                    "validators": [
+                        "<Numbers 9000.0<=v<=9000000000.0>"
+                    ]
+                },
+                "center": {
+                    "value": null,
+                    "ts": null,
+                    "name": "center",
+                    "unit": "Hz",
+                    "label": "Center Frequency",
+                    "validators": [
+                        "<Numbers 9000.0<=v<=9000000000.0>"
+                    ]
+                },
+                "span": {
+                    "value": null,
+                    "ts": null,
+                    "name": "span",
+                    "unit": "Hz",
+                    "label": "Frequency Span",
+                    "validators": [
+                        "<Numbers 9000.0<=v<=9000000000.0>"
+                    ]
+                },
+                "cw": {
+                    "value": null,
+                    "ts": null,
+                    "name": "cw",
+                    "unit": "Hz",
+                    "label": "CW Frequency",
+                    "validators": [
+                        "<Numbers 9000.0<=v<=9000000000.0>"
+                    ]
+                },
+                "points": {
+                    "value": 90001,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "points",
+                    "unit": "",
+                    "label": "Points",
+                    "validators": [
+                        "<Numbers 1<=v<=100001>"
+                    ]
+                },
+                "electrical_delay": {
+                    "value": null,
+                    "ts": null,
+                    "name": "electrical_delay",
+                    "unit": "s",
+                    "label": "Electrical Delay",
+                    "validators": [
+                        "<Numbers 0<=v<=100000>"
+                    ]
+                },
+                "sweep_time": {
+                    "value": null,
+                    "ts": null,
+                    "name": "sweep_time",
+                    "unit": "s",
+                    "label": "Time",
+                    "validators": [
+                        "<Numbers 0<=v<=1000000.0>"
+                    ]
+                },
+                "sweep_mode": {
+                    "value": null,
+                    "ts": null,
+                    "name": "sweep_mode",
+                    "unit": "",
+                    "label": "Mode",
+                    "validators": [
+                        "<Enum: {'GRO', 'HOLD', 'SING', 'CONT'}>"
+                    ]
+                },
+                "sweep_type": {
+                    "value": null,
+                    "ts": null,
+                    "name": "sweep_type",
+                    "unit": "",
+                    "label": "Type",
+                    "validators": [
+                        "<Enum: {'LOG', 'POW', 'SEGM', 'LIN', 'CW', 'PHAS'}>"
+                    ]
+                },
+                "group_trigger_count": {
+                    "value": null,
+                    "ts": null,
+                    "name": "group_trigger_count",
+                    "unit": "",
+                    "label": "group_trigger_count",
+                    "validators": [
+                        "<Ints 1<=v<=2000000>"
+                    ]
+                },
+                "trigger_source": {
+                    "value": null,
+                    "ts": null,
+                    "name": "trigger_source",
+                    "unit": "",
+                    "label": "trigger_source",
+                    "validators": [
+                        "<Enum: {'MAN', 'EXT', 'IMM'}>"
+                    ]
+                },
+                "frequency_axis": {
+                    "value": null,
+                    "ts": null,
+                    "name": "frequency_axis",
+                    "unit": "Hz",
+                    "label": "Frequency",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "frequency_log_axis": {
+                    "value": null,
+                    "ts": null,
+                    "name": "frequency_log_axis",
+                    "unit": "Hz",
+                    "label": "Frequency",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "time_axis": {
+                    "value": null,
+                    "ts": null,
+                    "name": "time_axis",
+                    "unit": "s",
+                    "label": "Time",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "active_trace": {
+                    "value": 1,
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "active_trace",
+                    "unit": "",
+                    "label": "Active Trace",
+                    "validators": [
+                        "<Numbers 1<=v<=24>"
+                    ]
+                },
+                "trace": {
+                    "value": "S21",
+                    "ts": "2026-09-16 08:50:22",
+                    "name": "trace",
+                    "unit": "",
+                    "label": "Trace",
+                    "validators": []
+                },
+                "format": {
+                    "value": null,
+                    "ts": null,
+                    "name": "format",
+                    "unit": "",
+                    "label": "Format",
+                    "validators": [
+                        "<Enum: {'REAL', 'MLOG', 'MLIN', 'UPH', 'IMAG', 'PHAS', 'POLAR'}>"
+                    ]
+                },
+                "magnitude": {
+                    "ts": null,
+                    "name": "magnitude",
+                    "unit": "dB",
+                    "label": "Magnitude",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "linear_magnitude": {
+                    "ts": null,
+                    "name": "linear_magnitude",
+                    "unit": "ratio",
+                    "label": "Magnitude",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "phase": {
+                    "ts": null,
+                    "name": "phase",
+                    "unit": "deg",
+                    "label": "Phase",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "unwrapped_phase": {
+                    "ts": null,
+                    "name": "unwrapped_phase",
+                    "unit": "deg",
+                    "label": "Phase",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "group_delay": {
+                    "ts": null,
+                    "name": "group_delay",
+                    "unit": "s",
+                    "label": "Group Delay",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "real": {
+                    "ts": null,
+                    "name": "real",
+                    "unit": "LinMag",
+                    "label": "Real",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "imaginary": {
+                    "ts": null,
+                    "name": "imaginary",
+                    "unit": "LinMag",
+                    "label": "Imaginary",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "polar": {
+                    "ts": null,
+                    "name": "polar",
+                    "unit": "ratio",
+                    "label": "Polar",
+                    "validators": [
+                        "<Arrays, shape: (<qcodes.parameters.parameter.Parameter: points at 1451194682576>,)>"
+                    ]
+                },
+                "auto_sweep": {
+                    "value": false,
+                    "ts": "2026-09-16 08:50:23",
+                    "name": "auto_sweep",
+                    "unit": "",
+                    "label": "Auto Sweep",
+                    "validators": [
+                        "<Boolean>"
+                    ]
+                }
+            },
+            "label": "vna",
+            "name": "vna",
+            "address": "TCPIP0::192.0.2.19::inst0::INSTR",
+            "terminator": "\n",
+            "read_terminator": "\n",
+            "write_terminator": "\n",
+            "timeout": 5.0
+        },
+        "q1": {
+            "submodules": {
+                "reset": {
+                    "submodules": {},
+                    "parameters": {
+                        "duration": {
+                            "value": 0.0002,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        }
+                    },
+                    "label": "reset",
+                    "name": "q1_reset"
+                },
+                "rxy": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q1_rxy_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "amp180": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "amp180",
+                            "unit": "",
+                            "label": "$\\pi-pulse amplitude$",
+                            "validators": [
+                                "<Numbers -10<=v<=10>"
+                            ]
+                        },
+                        "motzoi": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "motzoi",
+                            "unit": "",
+                            "label": "motzoi",
+                            "validators": [
+                                "<Numbers -1<=v<=1>"
+                            ]
+                        },
+                        "duration": {
+                            "value": 4.8e-08,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_type": {
+                            "value": "drag",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'chen_drag', 'drag', 'two_notch_drag'}>"
+                            ]
+                        },
+                        "anharmonicity": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "anharmonicity",
+                            "unit": "Hz",
+                            "label": "anharmonicity",
+                            "validators": []
+                        },
+                        "detuning": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "detuning",
+                            "unit": "Hz",
+                            "label": "detuning",
+                            "validators": []
+                        },
+                        "alpha2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha2",
+                            "unit": "",
+                            "label": "alpha2",
+                            "validators": []
+                        },
+                        "notch2_delta": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "notch2_delta",
+                            "unit": "Hz",
+                            "label": "notch2_delta",
+                            "validators": []
+                        }
+                    },
+                    "label": "rxy",
+                    "name": "q1_rxy"
+                },
+                "rxy12": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q1_rxy12_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "amp180": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "amp180",
+                            "unit": "",
+                            "label": "$\\pi-pulse amplitude$",
+                            "validators": [
+                                "<Numbers -10<=v<=10>"
+                            ]
+                        },
+                        "motzoi": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "motzoi",
+                            "unit": "",
+                            "label": "motzoi",
+                            "validators": [
+                                "<Numbers -1<=v<=1>"
+                            ]
+                        },
+                        "duration": {
+                            "value": 4.8e-08,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_type": {
+                            "value": "drag",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'chen_drag', 'drag', 'two_notch_drag'}>"
+                            ]
+                        },
+                        "anharmonicity": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "anharmonicity",
+                            "unit": "Hz",
+                            "label": "anharmonicity",
+                            "validators": []
+                        },
+                        "detuning": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "detuning",
+                            "unit": "Hz",
+                            "label": "detuning",
+                            "validators": []
+                        },
+                        "alpha2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha2",
+                            "unit": "",
+                            "label": "alpha2",
+                            "validators": []
+                        },
+                        "notch2_delta": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "notch2_delta",
+                            "unit": "Hz",
+                            "label": "notch2_delta",
+                            "validators": []
+                        }
+                    },
+                    "label": "rxy12",
+                    "name": "q1_rxy12"
+                },
+                "measure": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q1_measure_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "pulse_type": {
+                            "value": "SquarePulse",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'SquarePulse'}>"
+                            ]
+                        },
+                        "pulse_amp": {
+                            "value": 0.25,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_amp",
+                            "unit": "",
+                            "label": "pulse_amp",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_duration": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_duration",
+                            "unit": "s",
+                            "label": "pulse_duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "acq_channel": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_channel",
+                            "unit": "",
+                            "label": "acq_channel",
+                            "validators": [
+                                "<Hashable>"
+                            ]
+                        },
+                        "acq_delay": {
+                            "value": 2.28e-07,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_delay",
+                            "unit": "s",
+                            "label": "acq_delay",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "integration_time": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "integration_time",
+                            "unit": "s",
+                            "label": "integration_time",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "reset_clock_phase": {
+                            "value": true,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "reset_clock_phase",
+                            "unit": "",
+                            "label": "reset_clock_phase",
+                            "validators": [
+                                "<Boolean>"
+                            ]
+                        },
+                        "acq_weights_a": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_a",
+                            "unit": "",
+                            "label": "acq_weights_a",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_b": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_b",
+                            "unit": "",
+                            "label": "acq_weights_b",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_sampling_rate": {
+                            "value": 1000000000.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_sampling_rate",
+                            "unit": "",
+                            "label": "acq_weights_sampling_rate",
+                            "validators": [
+                                "<Numbers 1<=v<=10000000000.0>"
+                            ]
+                        },
+                        "acq_weight_type": {
+                            "value": "SSB",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weight_type",
+                            "unit": "",
+                            "label": "acq_weight_type",
+                            "validators": [
+                                "<Enum: {'SSB', 'Numerical'}>"
+                            ]
+                        },
+                        "acq_rotation": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_rotation",
+                            "unit": "",
+                            "label": "acq_rotation",
+                            "validators": []
+                        },
+                        "acq_threshold": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_threshold",
+                            "unit": "",
+                            "label": "acq_threshold",
+                            "validators": []
+                        },
+                        "num_points": {
+                            "value": 1,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "num_points",
+                            "unit": "",
+                            "label": "num_points",
+                            "validators": [
+                                "<Ints v>=1>"
+                            ]
+                        }
+                    },
+                    "label": "measure",
+                    "name": "q1_measure"
+                },
+                "ssro": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q1_ssro_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "pulse_type": {
+                            "value": "SquarePulse",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'NumericalPulse', 'SquarePulse'}>"
+                            ]
+                        },
+                        "pulse_amp": {
+                            "value": 0.25,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_amp",
+                            "unit": "",
+                            "label": "pulse_amp",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_duration": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_duration",
+                            "unit": "s",
+                            "label": "pulse_duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "acq_channel": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_channel",
+                            "unit": "",
+                            "label": "acq_channel",
+                            "validators": [
+                                "<Hashable>"
+                            ]
+                        },
+                        "acq_delay": {
+                            "value": 2.28e-07,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_delay",
+                            "unit": "s",
+                            "label": "acq_delay",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "integration_time": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "integration_time",
+                            "unit": "s",
+                            "label": "integration_time",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "reset_clock_phase": {
+                            "value": true,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "reset_clock_phase",
+                            "unit": "",
+                            "label": "reset_clock_phase",
+                            "validators": [
+                                "<Boolean>"
+                            ]
+                        },
+                        "acq_weights_a": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_a",
+                            "unit": "",
+                            "label": "acq_weights_a",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_b": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_b",
+                            "unit": "",
+                            "label": "acq_weights_b",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_sampling_rate": {
+                            "value": 1000000000,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_sampling_rate",
+                            "unit": "",
+                            "label": "acq_weights_sampling_rate",
+                            "validators": [
+                                "<Numbers 1<=v<=10000000000.0>"
+                            ]
+                        },
+                        "acq_weight_type": {
+                            "value": "SSB",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weight_type",
+                            "unit": "",
+                            "label": "acq_weight_type",
+                            "validators": [
+                                "<Enum: {'SSB', 'Numerical'}>"
+                            ]
+                        },
+                        "acq_rotation": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_rotation",
+                            "unit": "",
+                            "label": "acq_rotation",
+                            "validators": []
+                        },
+                        "acq_threshold": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_threshold",
+                            "unit": "",
+                            "label": "acq_threshold",
+                            "validators": []
+                        },
+                        "num_points": {
+                            "value": 1,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "num_points",
+                            "unit": "",
+                            "label": "num_points",
+                            "validators": [
+                                "<Ints v>=1>"
+                            ]
+                        },
+                        "acq_protocol": {
+                            "value": "SSBIntegrationComplex",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_protocol",
+                            "unit": "",
+                            "label": "acq_protocol",
+                            "validators": [
+                                "<Enum: {'NumericalSeparatedWeightedIntegration', 'Trace', 'SSBIntegrationComplex'}>"
+                            ]
+                        },
+                        "pulse_array": {
+                            "value": null,
+                            "ts": null,
+                            "name": "pulse_array",
+                            "unit": "",
+                            "label": "pulse_array",
+                            "validators": []
+                        },
+                        "pulse_samples": {
+                            "value": null,
+                            "ts": null,
+                            "name": "pulse_samples",
+                            "unit": "",
+                            "label": "pulse_samples",
+                            "validators": []
+                        }
+                    },
+                    "label": "ssro",
+                    "name": "q1_ssro"
+                },
+                "ports": {
+                    "submodules": {},
+                    "parameters": {
+                        "microwave": {
+                            "value": "q1:mw",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "microwave",
+                            "unit": "",
+                            "label": "microwave",
+                            "validators": []
+                        },
+                        "flux": {
+                            "value": "q1:fl",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "flux",
+                            "unit": "",
+                            "label": "flux",
+                            "validators": []
+                        },
+                        "readout": {
+                            "value": "q1:res",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "",
+                            "label": "readout",
+                            "validators": []
+                        }
+                    },
+                    "label": "ports",
+                    "name": "q1_ports"
+                },
+                "clock_freqs": {
+                    "submodules": {},
+                    "parameters": {
+                        "f01": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f01",
+                            "unit": "Hz",
+                            "label": "Qubit frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "f12": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f12",
+                            "unit": "Hz",
+                            "label": "Frequency of the |1>-|2> transition",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "readout": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "Hz",
+                            "label": "Readout frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "ssro": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "ssro",
+                            "unit": "Hz",
+                            "label": "Single shot readout frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "f01_bare": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f01_bare",
+                            "unit": "Hz",
+                            "label": "Bare 0->1 frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "alpha_bare": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha_bare",
+                            "unit": "Hz",
+                            "label": "Bare anharmonicity",
+                            "validators": []
+                        }
+                    },
+                    "label": "clock_freqs",
+                    "name": "q1_clock_freqs"
+                },
+                "pulse_compensation": {
+                    "submodules": {},
+                    "parameters": {
+                        "max_compensation_amp": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "max_compensation_amp",
+                            "unit": "",
+                            "label": "max_compensation_amp",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        },
+                        "time_grid": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "time_grid",
+                            "unit": "",
+                            "label": "time_grid",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        },
+                        "sampling_rate": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "sampling_rate",
+                            "unit": "",
+                            "label": "sampling_rate",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        }
+                    },
+                    "label": "pulse_compensation",
+                    "name": "q1_pulse_compensation"
+                },
+                "coherence": {
+                    "submodules": {
+                        "T1_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T1_flux",
+                            "name": "q1_coherence_T1_flux"
+                        },
+                        "T2_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2_flux",
+                            "name": "q1_coherence_T2_flux"
+                        },
+                        "T2E_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2E_flux",
+                            "name": "q1_coherence_T2E_flux"
+                        }
+                    },
+                    "parameters": {
+                        "T1": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T1",
+                            "unit": "s",
+                            "label": "T1",
+                            "validators": []
+                        },
+                        "T2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2",
+                            "unit": "s",
+                            "label": "T2",
+                            "validators": []
+                        },
+                        "T2E": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2E",
+                            "unit": "s",
+                            "label": "T2E",
+                            "validators": []
+                        }
+                    },
+                    "label": "coherence",
+                    "name": "q1_coherence"
+                },
+                "attenuation": {
+                    "submodules": {},
+                    "parameters": {
+                        "readout": {
+                            "value": 30.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "dB",
+                            "label": "readout",
+                            "validators": []
+                        },
+                        "spectroscopy": {
+                            "value": 30.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "spectroscopy",
+                            "unit": "dB",
+                            "label": "spectroscopy",
+                            "validators": []
+                        },
+                        "rabi": {
+                            "value": 4.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "rabi",
+                            "unit": "dB",
+                            "label": "rabi",
+                            "validators": []
+                        },
+                        "coupler_spectroscopy": {
+                            "value": 20.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "coupler_spectroscopy",
+                            "unit": "dB",
+                            "label": "coupler_spectroscopy",
+                            "validators": []
+                        },
+                        "coupler_rabi": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "coupler_rabi",
+                            "unit": "dB",
+                            "label": "coupler_rabi",
+                            "validators": []
+                        }
+                    },
+                    "label": "attenuation",
+                    "name": "q1_attenuation"
+                },
+                "reset_config": {
+                    "submodules": {},
+                    "parameters": {
+                        "idle_full": {
+                            "value": 0.0006,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_full",
+                            "unit": "s",
+                            "label": "idle_full",
+                            "validators": []
+                        },
+                        "idle_spectroscopy": {
+                            "value": 0.0001,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_spectroscopy",
+                            "unit": "s",
+                            "label": "idle_spectroscopy",
+                            "validators": []
+                        },
+                        "idle_resonator": {
+                            "value": 2e-05,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_resonator",
+                            "unit": "s",
+                            "label": "idle_resonator",
+                            "validators": []
+                        }
+                    },
+                    "label": "reset_config",
+                    "name": "q1_reset_config"
+                }
+            },
+            "parameters": {
+                "IDN": {
+                    "value": null,
+                    "ts": null,
+                    "name": "IDN",
+                    "unit": "",
+                    "label": "IDN",
+                    "validators": [
+                        "<Anything>"
+                    ]
+                },
+                "latency": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "latency",
+                    "unit": "s",
+                    "label": "latency",
+                    "validators": []
+                },
+                "flux_pulse_delay_f01": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "flux_pulse_delay_f01",
+                    "unit": "Hz",
+                    "label": "flux_pulse_delay_f01",
+                    "validators": []
+                },
+                "flux_pulse_delay_pi_amp": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "flux_pulse_delay_pi_amp",
+                    "unit": "",
+                    "label": "flux_pulse_delay_pi_amp",
+                    "validators": []
+                }
+            },
+            "label": "q1",
+            "name": "q1"
+        },
+        "q2": {
+            "submodules": {
+                "reset": {
+                    "submodules": {},
+                    "parameters": {
+                        "duration": {
+                            "value": 0.0002,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        }
+                    },
+                    "label": "reset",
+                    "name": "q2_reset"
+                },
+                "rxy": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q2_rxy_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "amp180": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "amp180",
+                            "unit": "",
+                            "label": "$\\pi-pulse amplitude$",
+                            "validators": [
+                                "<Numbers -10<=v<=10>"
+                            ]
+                        },
+                        "motzoi": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "motzoi",
+                            "unit": "",
+                            "label": "motzoi",
+                            "validators": [
+                                "<Numbers -1<=v<=1>"
+                            ]
+                        },
+                        "duration": {
+                            "value": 4.8e-08,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_type": {
+                            "value": "drag",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'chen_drag', 'drag', 'two_notch_drag'}>"
+                            ]
+                        },
+                        "anharmonicity": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "anharmonicity",
+                            "unit": "Hz",
+                            "label": "anharmonicity",
+                            "validators": []
+                        },
+                        "detuning": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "detuning",
+                            "unit": "Hz",
+                            "label": "detuning",
+                            "validators": []
+                        },
+                        "alpha2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha2",
+                            "unit": "",
+                            "label": "alpha2",
+                            "validators": []
+                        },
+                        "notch2_delta": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "notch2_delta",
+                            "unit": "Hz",
+                            "label": "notch2_delta",
+                            "validators": []
+                        }
+                    },
+                    "label": "rxy",
+                    "name": "q2_rxy"
+                },
+                "rxy12": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q2_rxy12_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "amp180": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "amp180",
+                            "unit": "",
+                            "label": "$\\pi-pulse amplitude$",
+                            "validators": [
+                                "<Numbers -10<=v<=10>"
+                            ]
+                        },
+                        "motzoi": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "motzoi",
+                            "unit": "",
+                            "label": "motzoi",
+                            "validators": [
+                                "<Numbers -1<=v<=1>"
+                            ]
+                        },
+                        "duration": {
+                            "value": 4.8e-08,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "duration",
+                            "unit": "s",
+                            "label": "duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_type": {
+                            "value": "drag",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'chen_drag', 'drag', 'two_notch_drag'}>"
+                            ]
+                        },
+                        "anharmonicity": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "anharmonicity",
+                            "unit": "Hz",
+                            "label": "anharmonicity",
+                            "validators": []
+                        },
+                        "detuning": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "detuning",
+                            "unit": "Hz",
+                            "label": "detuning",
+                            "validators": []
+                        },
+                        "alpha2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha2",
+                            "unit": "",
+                            "label": "alpha2",
+                            "validators": []
+                        },
+                        "notch2_delta": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "notch2_delta",
+                            "unit": "Hz",
+                            "label": "notch2_delta",
+                            "validators": []
+                        }
+                    },
+                    "label": "rxy12",
+                    "name": "q2_rxy12"
+                },
+                "measure": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q2_measure_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "pulse_type": {
+                            "value": "SquarePulse",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'SquarePulse'}>"
+                            ]
+                        },
+                        "pulse_amp": {
+                            "value": 0.25,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_amp",
+                            "unit": "",
+                            "label": "pulse_amp",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_duration": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_duration",
+                            "unit": "s",
+                            "label": "pulse_duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "acq_channel": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_channel",
+                            "unit": "",
+                            "label": "acq_channel",
+                            "validators": [
+                                "<Hashable>"
+                            ]
+                        },
+                        "acq_delay": {
+                            "value": 2.28e-07,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_delay",
+                            "unit": "s",
+                            "label": "acq_delay",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "integration_time": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "integration_time",
+                            "unit": "s",
+                            "label": "integration_time",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "reset_clock_phase": {
+                            "value": true,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "reset_clock_phase",
+                            "unit": "",
+                            "label": "reset_clock_phase",
+                            "validators": [
+                                "<Boolean>"
+                            ]
+                        },
+                        "acq_weights_a": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_a",
+                            "unit": "",
+                            "label": "acq_weights_a",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_b": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_b",
+                            "unit": "",
+                            "label": "acq_weights_b",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_sampling_rate": {
+                            "value": 1000000000.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_sampling_rate",
+                            "unit": "",
+                            "label": "acq_weights_sampling_rate",
+                            "validators": [
+                                "<Numbers 1<=v<=10000000000.0>"
+                            ]
+                        },
+                        "acq_weight_type": {
+                            "value": "SSB",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weight_type",
+                            "unit": "",
+                            "label": "acq_weight_type",
+                            "validators": [
+                                "<Enum: {'SSB', 'Numerical'}>"
+                            ]
+                        },
+                        "acq_rotation": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_rotation",
+                            "unit": "",
+                            "label": "acq_rotation",
+                            "validators": []
+                        },
+                        "acq_threshold": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_threshold",
+                            "unit": "",
+                            "label": "acq_threshold",
+                            "validators": []
+                        },
+                        "num_points": {
+                            "value": 1,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "num_points",
+                            "unit": "",
+                            "label": "num_points",
+                            "validators": [
+                                "<Ints v>=1>"
+                            ]
+                        }
+                    },
+                    "label": "measure",
+                    "name": "q2_measure"
+                },
+                "ssro": {
+                    "submodules": {
+                        "reference_magnitude": {
+                            "submodules": {},
+                            "parameters": {
+                                "reference_magnitude_dBm": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_dBm",
+                                    "unit": "dBm",
+                                    "label": "reference_magnitude_dBm",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_V": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_V",
+                                    "unit": "V",
+                                    "label": "reference_magnitude_V",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                },
+                                "reference_magnitude_A": {
+                                    "value": NaN,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "reference_magnitude_A",
+                                    "unit": "A",
+                                    "label": "reference_magnitude_A",
+                                    "validators": [
+                                        "<Numbers>"
+                                    ]
+                                }
+                            },
+                            "label": "reference_magnitude",
+                            "name": "q2_ssro_reference_magnitude"
+                        }
+                    },
+                    "parameters": {
+                        "pulse_type": {
+                            "value": "SquarePulse",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_type",
+                            "unit": "",
+                            "label": "pulse_type",
+                            "validators": [
+                                "<Enum: {'NumericalPulse', 'SquarePulse'}>"
+                            ]
+                        },
+                        "pulse_amp": {
+                            "value": 0.25,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_amp",
+                            "unit": "",
+                            "label": "pulse_amp",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "pulse_duration": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "pulse_duration",
+                            "unit": "s",
+                            "label": "pulse_duration",
+                            "validators": [
+                                "<Numbers 0<=v<=1>"
+                            ]
+                        },
+                        "acq_channel": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_channel",
+                            "unit": "",
+                            "label": "acq_channel",
+                            "validators": [
+                                "<Hashable>"
+                            ]
+                        },
+                        "acq_delay": {
+                            "value": 2.28e-07,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_delay",
+                            "unit": "s",
+                            "label": "acq_delay",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "integration_time": {
+                            "value": 4e-06,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "integration_time",
+                            "unit": "s",
+                            "label": "integration_time",
+                            "validators": [
+                                "<Numbers 0<=v<=0.0001>"
+                            ]
+                        },
+                        "reset_clock_phase": {
+                            "value": true,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "reset_clock_phase",
+                            "unit": "",
+                            "label": "reset_clock_phase",
+                            "validators": [
+                                "<Boolean>"
+                            ]
+                        },
+                        "acq_weights_a": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_a",
+                            "unit": "",
+                            "label": "acq_weights_a",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_b": {
+                            "value": [],
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_b",
+                            "unit": "",
+                            "label": "acq_weights_b",
+                            "validators": [
+                                "<Arrays, shape: None>"
+                            ]
+                        },
+                        "acq_weights_sampling_rate": {
+                            "value": 1000000000,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weights_sampling_rate",
+                            "unit": "",
+                            "label": "acq_weights_sampling_rate",
+                            "validators": [
+                                "<Numbers 1<=v<=10000000000.0>"
+                            ]
+                        },
+                        "acq_weight_type": {
+                            "value": "SSB",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_weight_type",
+                            "unit": "",
+                            "label": "acq_weight_type",
+                            "validators": [
+                                "<Enum: {'SSB', 'Numerical'}>"
+                            ]
+                        },
+                        "acq_rotation": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_rotation",
+                            "unit": "",
+                            "label": "acq_rotation",
+                            "validators": []
+                        },
+                        "acq_threshold": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_threshold",
+                            "unit": "",
+                            "label": "acq_threshold",
+                            "validators": []
+                        },
+                        "num_points": {
+                            "value": 1,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "num_points",
+                            "unit": "",
+                            "label": "num_points",
+                            "validators": [
+                                "<Ints v>=1>"
+                            ]
+                        },
+                        "acq_protocol": {
+                            "value": "SSBIntegrationComplex",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "acq_protocol",
+                            "unit": "",
+                            "label": "acq_protocol",
+                            "validators": [
+                                "<Enum: {'NumericalSeparatedWeightedIntegration', 'Trace', 'SSBIntegrationComplex'}>"
+                            ]
+                        },
+                        "pulse_array": {
+                            "value": null,
+                            "ts": null,
+                            "name": "pulse_array",
+                            "unit": "",
+                            "label": "pulse_array",
+                            "validators": []
+                        },
+                        "pulse_samples": {
+                            "value": null,
+                            "ts": null,
+                            "name": "pulse_samples",
+                            "unit": "",
+                            "label": "pulse_samples",
+                            "validators": []
+                        }
+                    },
+                    "label": "ssro",
+                    "name": "q2_ssro"
+                },
+                "ports": {
+                    "submodules": {},
+                    "parameters": {
+                        "microwave": {
+                            "value": "q2:mw",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "microwave",
+                            "unit": "",
+                            "label": "microwave",
+                            "validators": []
+                        },
+                        "flux": {
+                            "value": "q2:fl",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "flux",
+                            "unit": "",
+                            "label": "flux",
+                            "validators": []
+                        },
+                        "readout": {
+                            "value": "q2:res",
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "",
+                            "label": "readout",
+                            "validators": []
+                        }
+                    },
+                    "label": "ports",
+                    "name": "q2_ports"
+                },
+                "clock_freqs": {
+                    "submodules": {},
+                    "parameters": {
+                        "f01": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f01",
+                            "unit": "Hz",
+                            "label": "Qubit frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "f12": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f12",
+                            "unit": "Hz",
+                            "label": "Frequency of the |1>-|2> transition",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "readout": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "Hz",
+                            "label": "Readout frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "ssro": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "ssro",
+                            "unit": "Hz",
+                            "label": "Single shot readout frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "f01_bare": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "f01_bare",
+                            "unit": "Hz",
+                            "label": "Bare 0->1 frequency",
+                            "validators": [
+                                "<Numbers 0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "alpha_bare": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "alpha_bare",
+                            "unit": "Hz",
+                            "label": "Bare anharmonicity",
+                            "validators": []
+                        }
+                    },
+                    "label": "clock_freqs",
+                    "name": "q2_clock_freqs"
+                },
+                "pulse_compensation": {
+                    "submodules": {},
+                    "parameters": {
+                        "max_compensation_amp": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "max_compensation_amp",
+                            "unit": "",
+                            "label": "max_compensation_amp",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        },
+                        "time_grid": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "time_grid",
+                            "unit": "",
+                            "label": "time_grid",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        },
+                        "sampling_rate": {
+                            "value": NaN,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "sampling_rate",
+                            "unit": "",
+                            "label": "sampling_rate",
+                            "validators": [
+                                "<Numbers v>=0>"
+                            ]
+                        }
+                    },
+                    "label": "pulse_compensation",
+                    "name": "q2_pulse_compensation"
+                },
+                "coherence": {
+                    "submodules": {
+                        "T1_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T1_flux",
+                            "name": "q2_coherence_T1_flux"
+                        },
+                        "T2_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2_flux",
+                            "name": "q2_coherence_T2_flux"
+                        },
+                        "T2E_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2E_flux",
+                            "name": "q2_coherence_T2E_flux"
+                        }
+                    },
+                    "parameters": {
+                        "T1": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T1",
+                            "unit": "s",
+                            "label": "T1",
+                            "validators": []
+                        },
+                        "T2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2",
+                            "unit": "s",
+                            "label": "T2",
+                            "validators": []
+                        },
+                        "T2E": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2E",
+                            "unit": "s",
+                            "label": "T2E",
+                            "validators": []
+                        }
+                    },
+                    "label": "coherence",
+                    "name": "q2_coherence"
+                },
+                "attenuation": {
+                    "submodules": {},
+                    "parameters": {
+                        "readout": {
+                            "value": 30.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "readout",
+                            "unit": "dB",
+                            "label": "readout",
+                            "validators": []
+                        },
+                        "spectroscopy": {
+                            "value": 30.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "spectroscopy",
+                            "unit": "dB",
+                            "label": "spectroscopy",
+                            "validators": []
+                        },
+                        "rabi": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "rabi",
+                            "unit": "dB",
+                            "label": "rabi",
+                            "validators": []
+                        },
+                        "coupler_spectroscopy": {
+                            "value": 30.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "coupler_spectroscopy",
+                            "unit": "dB",
+                            "label": "coupler_spectroscopy",
+                            "validators": []
+                        },
+                        "coupler_rabi": {
+                            "value": 4.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "coupler_rabi",
+                            "unit": "dB",
+                            "label": "coupler_rabi",
+                            "validators": []
+                        }
+                    },
+                    "label": "attenuation",
+                    "name": "q2_attenuation"
+                },
+                "reset_config": {
+                    "submodules": {},
+                    "parameters": {
+                        "idle_full": {
+                            "value": 0.0006,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_full",
+                            "unit": "s",
+                            "label": "idle_full",
+                            "validators": []
+                        },
+                        "idle_spectroscopy": {
+                            "value": 0.0001,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_spectroscopy",
+                            "unit": "s",
+                            "label": "idle_spectroscopy",
+                            "validators": []
+                        },
+                        "idle_resonator": {
+                            "value": 2e-05,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "idle_resonator",
+                            "unit": "s",
+                            "label": "idle_resonator",
+                            "validators": []
+                        }
+                    },
+                    "label": "reset_config",
+                    "name": "q2_reset_config"
+                }
+            },
+            "parameters": {
+                "IDN": {
+                    "value": null,
+                    "ts": null,
+                    "name": "IDN",
+                    "unit": "",
+                    "label": "IDN",
+                    "validators": [
+                        "<Anything>"
+                    ]
+                },
+                "latency": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "latency",
+                    "unit": "s",
+                    "label": "latency",
+                    "validators": []
+                },
+                "flux_pulse_delay_f01": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "flux_pulse_delay_f01",
+                    "unit": "Hz",
+                    "label": "flux_pulse_delay_f01",
+                    "validators": []
+                },
+                "flux_pulse_delay_pi_amp": {
+                    "value": 0.0,
+                    "ts": "2026-09-16 08:45:36",
+                    "name": "flux_pulse_delay_pi_amp",
+                    "unit": "",
+                    "label": "flux_pulse_delay_pi_amp",
+                    "validators": []
+                }
+            },
+            "label": "q2",
+            "name": "q2"
+        },
+        "q1_q2": {
+            "submodules": {
+                "cz": {
+                    "submodules": {
+                        "flux_pulse": {
+                            "submodules": {},
+                            "parameters": {
+                                "pulse_type": {
+                                    "value": "none set",
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "pulse_type",
+                                    "unit": "",
+                                    "label": "f_\\text{pulse_type}$",
+                                    "validators": []
+                                },
+                                "amplitude": {
+                                    "value": 0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "amplitude",
+                                    "unit": "a.u.",
+                                    "label": "$f_\\text{pulsed_bias}$",
+                                    "validators": []
+                                },
+                                "duration": {
+                                    "value": 0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "duration",
+                                    "unit": "s",
+                                    "label": "$f_\\text{dur_flux}$",
+                                    "validators": [
+                                        "<Numbers 0<=v<=0.001>"
+                                    ]
+                                },
+                                "start_pad": {
+                                    "value": 0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "start_pad",
+                                    "unit": "s",
+                                    "label": "f_\\text{start_pad}$",
+                                    "validators": [
+                                        "<Numbers 0.0<=v<=1e-06>"
+                                    ]
+                                },
+                                "end_pad": {
+                                    "value": 0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "end_pad",
+                                    "unit": "s",
+                                    "label": "f_\\text{end_pad}$",
+                                    "validators": [
+                                        "<Numbers 0.0<=v<=1e-06>"
+                                    ]
+                                },
+                                "sampling_time": {
+                                    "value": 1e-09,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "sampling_time",
+                                    "unit": "s",
+                                    "label": "f_\\text{sampling_time}$",
+                                    "validators": [
+                                        "<Numbers 1e-10<=v<=1e-08>"
+                                    ]
+                                }
+                            },
+                            "label": "flux_pulse",
+                            "name": "q1_q2_cz_flux_pulse"
+                        }
+                    },
+                    "parameters": {
+                        "q1_phase_correction": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "q1_phase_correction",
+                            "unit": "degrees",
+                            "label": "q1_phase_correction",
+                            "validators": [
+                                "<Numbers -1000000000000.0<=v<=1000000000000.0>"
+                            ]
+                        },
+                        "q2_phase_correction": {
+                            "value": 0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "q2_phase_correction",
+                            "unit": "degrees",
+                            "label": "q2_phase_correction",
+                            "validators": [
+                                "<Numbers -1000000000000.0<=v<=1000000000000.0>"
+                            ]
+                        }
+                    },
+                    "label": "cz",
+                    "name": "q1_q2_cz"
+                },
+                "coherence": {
+                    "submodules": {
+                        "T1_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T1_flux",
+                            "name": "q1_q2_coherence_T1_flux"
+                        },
+                        "T2_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2_flux",
+                            "name": "q1_q2_coherence_T2_flux"
+                        },
+                        "T2E_flux": {
+                            "submodules": {},
+                            "parameters": {
+                                "time": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "time",
+                                    "unit": "s",
+                                    "label": "time",
+                                    "validators": []
+                                },
+                                "flux": {
+                                    "value": [],
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "flux",
+                                    "unit": "$\\Phi/\\Phi_0$",
+                                    "label": "flux",
+                                    "validators": []
+                                }
+                            },
+                            "label": "T2E_flux",
+                            "name": "q1_q2_coherence_T2E_flux"
+                        }
+                    },
+                    "parameters": {
+                        "T1": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T1",
+                            "unit": "s",
+                            "label": "T1",
+                            "validators": []
+                        },
+                        "T2": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2",
+                            "unit": "s",
+                            "label": "T2",
+                            "validators": []
+                        },
+                        "T2E": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "T2E",
+                            "unit": "s",
+                            "label": "T2E",
+                            "validators": []
+                        }
+                    },
+                    "label": "coherence",
+                    "name": "q1_q2_coherence"
+                },
+                "couplerflux": {
+                    "submodules": {},
+                    "parameters": {
+                        "fcmax": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "fcmax",
+                            "unit": "Hz",
+                            "label": "fcmax",
+                            "validators": []
+                        },
+                        "fcmin": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "fcmin",
+                            "unit": "Hz",
+                            "label": "fcmin",
+                            "validators": []
+                        },
+                        "Phi0": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "Phi0",
+                            "unit": "V",
+                            "label": "Phi0",
+                            "validators": []
+                        },
+                        "V0": {
+                            "value": 0.0,
+                            "ts": "2026-09-16 08:45:36",
+                            "name": "V0",
+                            "unit": "V",
+                            "label": "V0",
+                            "validators": []
+                        }
+                    },
+                    "label": "couplerflux",
+                    "name": "q1_q2_couplerflux"
+                },
+                "predistortion": {
+                    "submodules": {
+                        "iir0": {
+                            "submodules": {},
+                            "parameters": {
+                                "a": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "a",
+                                    "unit": "a.u.",
+                                    "label": "a",
+                                    "validators": []
+                                },
+                                "tau": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "tau",
+                                    "unit": "s",
+                                    "label": "tau",
+                                    "validators": []
+                                },
+                                "enabled": {
+                                    "value": false,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "enabled",
+                                    "unit": "bool",
+                                    "label": "enabled",
+                                    "validators": []
+                                }
+                            },
+                            "label": "iir0",
+                            "name": "q1_q2_predistortion_iir0"
+                        },
+                        "iir1": {
+                            "submodules": {},
+                            "parameters": {
+                                "a": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "a",
+                                    "unit": "a.u.",
+                                    "label": "a",
+                                    "validators": []
+                                },
+                                "tau": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "tau",
+                                    "unit": "s",
+                                    "label": "tau",
+                                    "validators": []
+                                },
+                                "enabled": {
+                                    "value": false,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "enabled",
+                                    "unit": "bool",
+                                    "label": "enabled",
+                                    "validators": []
+                                }
+                            },
+                            "label": "iir1",
+                            "name": "q1_q2_predistortion_iir1"
+                        },
+                        "iir2": {
+                            "submodules": {},
+                            "parameters": {
+                                "a": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "a",
+                                    "unit": "a.u.",
+                                    "label": "a",
+                                    "validators": []
+                                },
+                                "tau": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "tau",
+                                    "unit": "s",
+                                    "label": "tau",
+                                    "validators": []
+                                },
+                                "enabled": {
+                                    "value": false,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "enabled",
+                                    "unit": "bool",
+                                    "label": "enabled",
+                                    "validators": []
+                                }
+                            },
+                            "label": "iir2",
+                            "name": "q1_q2_predistortion_iir2"
+                        },
+                        "iir3": {
+                            "submodules": {},
+                            "parameters": {
+                                "a": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "a",
+                                    "unit": "a.u.",
+                                    "label": "a",
+                                    "validators": []
+                                },
+                                "tau": {
+                                    "value": 0.0,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "tau",
+                                    "unit": "s",
+                                    "label": "tau",
+                                    "validators": []
+                                },
+                                "enabled": {
+                                    "value": false,
+                                    "ts": "2026-09-16 08:45:36",
+                                    "name": "enabled",
+                                    "unit": "bool",
+                                    "label": "enabled",
+                                    "validators": []
+                                }
+                            },
+                            "label": "iir3",
+                            "name": "q1_q2_predistortion_iir3"
+                        },
+                        "fir": {
+                            "submodules": {},
+                            "parameters": {
+                                "coeffs": {
+                                    "value": [
+                                        1.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0
